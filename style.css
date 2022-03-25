@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/*PALETA:
+
+#2589BD - Fundos
+#4B66BF - Quadrados (Atualizaçoes e apostilas)
+#FF9203 - Fontes
+#CFCDC1 - Variados 
+*/
+
+
+/*Configurações gerais*/
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Cabeçalho*/
+#container ul {
+display: flex;
+background-color: #2589BD;
+justify-content: center;
+gap: 30px;
+padding: 20px;
+}
+
+#container a {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#container a:hover {
+    color: rgba(255, 255, 255, 0.527);
+}
+
+/*Sobre o Ceprom*/
+#sobre-ceprom img {
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#sobre-texto span {
+    margin-left: 30px;
+}
+
+#sobre-ceprom h1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #13315C;
+}
+
+/*Sobre o Ceprom - TEXTO*/
+#sobre-texto {
+    margin-left: 30px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#sobre-texto h1 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: #FF9203;
+    margin-bottom: 10px;
+}
+
+#sobre-texto #text-flex {
+    display: flex;
+    align-items: center;
+}
+
+#sobre-texto #text-flex p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+}
+
+#sobre-texto #text-flex img {
+    width: 350px;
+    margin-right: 30px;
+    margin-left: 20px;
+    border: #2589BD;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/*Atualização*/
+
+#atualizacao h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: #FF9203;
+}
+
+#atualizacao #linha1 {
+    background-color: #cfcdc1;
+    height: 15px;
+    position: relative;
+    top: 115px;
+    margin-right: 850px;
+}
+
+#atualizacao #linha2 {
+    background-color: #cfcdc1;
+    height: 15px;
+    position: relative;
+    top: 100px;
+    margin-left: 850px;
+}
+
+#atua-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.quadrado {
+    background-color: rgb(212, 209, 209);
+    height: 310px;
+    width: 300px;
+    padding-top: 20px;
+    border: #2589BD;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.quadrado img {
+    margin: auto;
+    display: block;
+}
+
+#atua-container .quadrado > h1 {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #13315C;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#atua-container .quadrado #botao-at button {
+    margin-top: 0px;
+    border: none;
+    padding: 10px 30px;
+    background-color: #FF9203;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#atua-container .quadrado #botao-at button:hover {
+    background-color: #693d02;
+    cursor: pointer;
+}
+
+/*Apostilas*/
+#apostilas {
+margin-top: -50px;
+}
+
+#apostilas h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: #FF9203;
+}
+
+#apostilas #linha1 {
+    background-color: #cfcdc1;
+    height: 15px;
+    position: relative;
+    top: 115px;
+    margin-right: 850px;
+}
+
+#apostilas #linha2 {
+    background-color: #cfcdc1;
+    height: 15px;
+    position: relative;
+    top: 100px;
+    margin-left: 850px;
+}
+
+#apostila-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+#apostila-container .apostila-quadrado {
+    background-color: #1d5574;
+    height: 310px;
+    width: 300px;
+    box-shadow: 10px 10px #13315C ;
+}
+
+#apostila-container .apostila-quadrado:hover {
+    background-color: #4394c0;
+}
+
+#apostila-container .apostila-quadrado img {
+    width: 200px;
+    position: relative;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#apostila-container .apostila-quadrado h1 {
+    color: white;
+    font-size: 25px;
+    margin-top: 45px;
+}
+
+#botao button {
+    margin-top: 30px;
+    border: none;
+    padding: 15px 50px;
+    background-color: #FF9203;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+
+   box-shadow: 5px 5px #b8690186;
+}
+
+#botao button:hover {
+    background-color: #a35d02;
+    box-shadow: 5px 5px #f7c482;
+    cursor: pointer;
+}
+
+#contatos {
+        margin-left: 30px;
+        margin-top: 20px;
+}
+
+#contatos h1 {
+        font-size: 50px;
+        font-family: 'Oswald', sans-serif;
+        color: #FF9203;
+        margin-bottom: 10px;
+}
+
+#contatos img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#contatos li {
+    margin-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+#contatos p {
+    margin-top: -70px;
+    margin-left: 70px;
+    color: black;
+}
+
+#contatos ul li a > p:hover {
+    color: #3889fa;
+}
+
+#maps {
+    position:absolute;
+    margin-left: 62%;
+    margin-top: -250px;
+    border: #13315C;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#maps h1 {
+    font-size: 20px;
+    text-align: center;
+    background-color: #2589BD;
+    margin: 0px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#rodape {
+    margin-top: 50px;
+    background-color: #2589BD;
+    height: 50px;
+}
+
+#rodape > p {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPOSIVIDADE*/
+@media (max-width: 1000px) {
+
+
+/*Cabeçalho*/
+#container ul {
+    display: flex;
+    background-color: #2589BD;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    }
+    
+    #container a {
+        color: white;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    #container a:hover {
+        color: rgba(255, 255, 255, 0.527);
+    }
+    
+    /*Sobre o Ceprom*/
+    #sobre-ceprom img {
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width:200px;
+    }
+    
+    #sobre-ceprom h1 {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        color: #13315C;
+    }
+    
+    /*Sobre o Ceprom - TEXTO*/
+    #sobre-texto {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    
+    #sobre-texto h1 {
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        color: #FF9203;
+        margin-bottom: 10px;
+    }
+    
+    #sobre-texto #text-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #sobre-texto #text-flex p {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-indent: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    
+    #sobre-texto #text-flex img {
+        width: 300px;
+        margin-right: 60px;
+        margin-left: 20px;
+        border: #2589BD;
+        border-width: 5px;
+        border-style: solid;
+    }
+    
+    /*Atualização*/
+    
+    #atualizacao h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        color: #FF9203;
+    }
+    
+    #atualizacao #linha1 {
+        display: none;
+    }
+    
+    #atualizacao #linha2 {
+        display: none;
+    }
+    
+    #atua-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    
+    .quadrado {
+        background-color: #CFCDC1;
+        height: 310px;
+        width: 300px;
+        padding-top: 20px;
+        border: #2589BD;
+        border-width: 5px;
+        border-style: solid;
+    }
+    
+    .quadrado img {
+        margin: auto;
+        display: block;
+    }
+    
+    #atua-container .quadrado > h1 {
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #13315C;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    #atua-container .quadrado #botao-at button {
+        margin-top: 0px;
+        border: none;
+        padding: 10px 30px;
+        background-color: #FF9203;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    
+    #atua-container .quadrado #botao-at button:hover {
+        background-color: #693d02;
+        cursor: pointer;
+    }
+    
+    /*Apostilas*/
+    #apostilas {
+    margin-top: -50px;
+    }
+    
+    #apostilas h1 {
+        text-align: center;
+        margin-top: 80px;
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        color: #FF9203;
+    }
+    
+    #apostilas #linha1 {
+        display: none;
+    }
+    
+    #apostilas #linha2 {
+        display: none;
+    }
+    
+    #apostila-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 20px;
+    }
+    
+    #apostila-container .apostila-quadrado {
+        background-color: #1d5574;
+        height: 280px;
+        width: 250px;
+        box-shadow: 10px 10px #13315C ;
+    }
+    
+    #apostila-container .apostila-quadrado:hover {
+        background-color: #4394c0;
+    }
+    
+    #apostila-container .apostila-quadrado img {
+        width: 150px;
+        position: relative;
+        top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #apostila-container .apostila-quadrado h1 {
+        color: white;
+        font-size: 25px;
+        margin-top: 45px;
+    }
+    
+    #botao button {
+        margin-top: 30px;
+        border: none;
+        padding: 15px 50px;
+        background-color: #FF9203;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        border-radius: 5px;
+    
+       box-shadow: 5px 5px #b8690186;
+    }
+    
+    #botao button:hover {
+        background-color: #a35d02;
+        box-shadow: 5px 5px #f7c482;
+        cursor: pointer;
+    }
+
+    #contatos {
+        margin-left: 30px;
+        margin-top: 20px;
+        
+}
+
+    #contatos h1 {
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        color: #FF9203;
+        margin-bottom: 10px;
+    }
+
+    #contatos img {
+        width: 50px;
+        margin-bottom: 40px;
+    }
+
+    #contatos li {
+        margin-top: 15px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+    }
+
+    #contatos p {
+        position: relative;
+        top: -15px;
+        margin-left: 70px;
+        color: black;
+        
+    }
+
+    #contatos ul li a > p:hover {
+        color: #3889fa;
+    }
+
+    #maps {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 30px;
+        border: #13315C;
+        border-width: 5px;
+        border-style: solid;
+    }
+
+    #maps iframe {
+        width: 300px;
+
+        display: block;
+    }
+
+    #maps h1 {
+        font-size: 20px;
+        text-align: center;
+        background-color: #2589BD;
+         margin: 0px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #rodape {
+        margin-top: 300px;
+        background-color: #2589BD;
+        height: 50px;
+    }
+    
+    #rodape > p {
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        top: 15px;
+    }
+}
