@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap%27');
+
+/*PALETA:
+
+#2589BD - Fundos
+#4B66BF - Quadrados (Atualizaçoes e apostilas)
+#FF9203 - Fontes
+#CFCDC1 - Variados 
+*/
+
+
+/*Configurações gerais*/
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Cabeçalho*/
+#container ul {
+display: flex;
+background-color: #2589BD;
+justify-content: center;
+gap: 30px;
+padding: 20px;
+}
+
+#container a {
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+}
+
+#container a:hover {
+    color: rgba(255, 255, 255, 0.527);
+}
+
+/*Apostilas*/
+#apostilas {
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+    
+    #apostilas h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 50px;
+        font-family: 'Oswald', sans-serif;
+        color: #FF9203;
+    }
+    
+    
+    #apostila-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    
+    }
+
+
+    #apostila-container a {
+        background-color: #1d5574;
+        height: 300px;
+        width:300px;
+        box-shadow: 10px 10px #13315C ;
+        margin-bottom: 30px;
+    }
+    
+    #apostila-container a:hover {
+        background-color: #4394c0;
+    }
+    
+    #apostila-container img {
+        width: 180px;
+        position: relative;
+        top: 30px;
+        margin: auto;
+        display: block;
+    }
+    
+    #apostila-container h1 {
+        color: white;
+        font-size: 25px;
+        margin-top: 15%;
+        text-align: center;
+    }
+
+    #apostila-container .imagem {
+        width: 200px;
+    }
+
+    #apostila-container .dois {
+        width: 210px;
+    }
+
+    #apostila-container .meio {
+      margin: auto;
+    }
+
+
+
+
+    #rodape {
+        margin-top: 50px;
+        background-color: #2589BD;
+        height: 50px;
+        width: 100%;
+    }
+    
+    #rodape > p {
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        top: 15px;
+    }
+    
+    /*RESPOSIVIDADE*/
+@media (max-width: 1000px) {
+/*Apostilas*/
+#apostilas {
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 30px;
+    }
+    
+    #apostilas h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 50px;
+        font-family: 'Oswald', sans-serif;
+        color: #FF9203;
+    }
+    
+    
+    #apostila-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: -100px;
+    }
+
+
+    #apostila-container a {
+        background-color: #1d5574;
+        height: 160px;
+        width:140px;
+        box-shadow: 10px 10px #13315C ;
+        margin-bottom: 30px;
+    }
+    
+    #apostila-container a:hover {
+        background-color: #4394c0;
+    }
+    
+    #apostila-container img {
+        width:60px;
+        position: relative;
+        top: 30px;
+        margin: auto;
+        display: block;
+        
+    }
+    
+    #apostila-container h1 {
+        color: white;
+        font-size: 15px;
+        margin-top: 24%;
+        text-align: center;
+    }
+
+    #apostila-container .imagem {
+        width: 90px;
+    }
+
+    #apostila-container .dois {
+        width: 100px;
+    }
+
+    #apostila-container .meio {
+      margin: auto;
+    }
+
+    #apostila-container .costura {
+        margin-top:  -30px;
+      }
+
+    #rodape {
+        margin-top: 50px;
+        background-color: #2589BD;
+        height: 45px;
+        width: 100%;
+        padding: -650px;
+    }
+    
+    #rodape > p {
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        padding: 0;
+        
+    }
+}
